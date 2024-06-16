@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:midnightblue;
+}
+
+.controls{
+    position: absolute;
+    width: 400px;
+    background-color: aquamarine;
+    border: 3px solid dodgerblue;
+    padding: 30px;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.controls p{
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.controls h1{
+    display: inline-block;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.controls button{
+    width: 400px;
+    height: 40px;
+    outline: none;
+    background-color: dodgerblue;
+    border: none;
+    color: aliceblue;
+}
+
+#container{
+    margin-left: 51%;
+    margin-top: 20px;
+    border: 3px solid black;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
