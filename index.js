@@ -6,6 +6,7 @@ let BgColor = document.querySelector("#BgColor");
 let GridColor = document.querySelector("#GridColor");
 let count = document.querySelector(".count");
 
+
 updateDrawArea();
 range.addEventListener("input",updateDrawArea)
 
@@ -33,11 +34,17 @@ container.addEventListener("mouseenter", changeClr);
 
 function changeClr() {
     for(let indDiv of pixelDiv){
-        indDiv.addEventListener("mouseenter",()=> {
+
+        indDiv.addEventListener("click",()=> {
             indDiv.style.backgroundColor = `${GridColor.value}`;
+        });
+        
+        indDiv.addEventListener("dblclick",()=> {
+            indDiv.style.backgroundColor = `${BgColor.value}`;
         });
     }
 }
+
 
 BgColor.addEventListener("change", () => {
     for(let indDiv of pixelDiv){
@@ -54,5 +61,4 @@ reset.addEventListener("click", () => {
 }
 })
 
-console.log(pixelDiv);
 
